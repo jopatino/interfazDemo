@@ -7,6 +7,7 @@ using Xamarin.Forms;
 
 namespace interfazDemo
 {
+    
 	public partial class App : Application
 	{
 		public App ()
@@ -14,6 +15,8 @@ namespace interfazDemo
 			InitializeComponent();
 
 			MainPage = new interfazDemo.MainPage();
+
+
 		}
 
 		protected override void OnStart ()
@@ -30,5 +33,7 @@ namespace interfazDemo
 		{
 			// Handle when your app resumes
 		}
-	}
+
+       
+    }
 }
