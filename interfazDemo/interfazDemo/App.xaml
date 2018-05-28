@@ -5,18 +5,7 @@
 	<Application.Resources>
 
 		<!-- Application resource dictionary -->
-        <ResourceDictionary>
-            <Style x:Key="LabelLayout" TargetType="Button">
-                <Setter Property="FontSize" Value="Large" />
-                <Setter Property="FontAttributes" Value="Bold" />
-            </Style>
-            <Style x:Key="StyStackLayout" TargetType="Button">
-
-                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
-                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
-                <Setter Property="Margin" Value="10" />
-            </Style>
-        </ResourceDictionary>
+        
 
     </Application.Resources>
 </Application>

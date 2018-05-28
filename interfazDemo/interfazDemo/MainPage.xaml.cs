@@ -7,25 +7,13 @@ using Xamarin.Forms;
 
 namespace interfazDemo
 {
-    public partial class MainPage : MasterDetailPage
+    public partial class MainPage : ContentPage
     {
         public MainPage()
         {
-            masterPage.ListView.ItemSelected += OnItemSelected;
+            InitializeComponent();
         }
 
-        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            var item = e.SelectedItem as MasterPageItem;
-            if (item != null)
-            {
-                var navigationPage = new NavigationPage((Page)Activator.CreateInstance(item.TipoPagina));
-                navigationPage.BarBackgroundColor = Color.MidnightBlue;
-                Detail = navigationPage;
-                //Detail = new NavigationPage((Page)Activator.CreateInstance(item.TipoPagina));
-                masterPage.ListView.SelectedItem = null;
-                IsPresented = false;
-            }
-        }
+        
     }
 }
