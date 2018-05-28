@@ -8,7 +8,7 @@
     <Grid ColumnSpacing="0"
           RowSpacing="0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="2*"></RowDefinition>
             <RowDefinition Height="200"></RowDefinition>
@@ -19,16 +19,20 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Button Text="Botón 3" BackgroundColor="Orange" Grid.Row="1"></Button>
-        <Button Text="Botón 4" BackgroundColor="Silver" Grid.Row="1" Grid.Column="1"></Button>
+      
         <Button Text="Botón 5" BackgroundColor="Red" Grid.Row="2"></Button>
         <Button Text="Botón 6" BackgroundColor="Blue" Grid.Row="2" Grid.Column="1"></Button>
         <Button Text="Botón 7" BackgroundColor="Chocolate" Grid.Row="3" Grid.ColumnSpan="2"></Button>
 
-        <BoxView BackgroundColor="DarkGreen" Grid.Column="2"></BoxView>
-        <BoxView BackgroundColor="Azure" Grid.Row="1" Grid.Column="2"></BoxView>
-        <BoxView BackgroundColor="Purple" Grid.Row="2" Grid.Column="2"></BoxView>
-        <BoxView BackgroundColor="Violet" Grid.Row="3" Grid.Column="2"></BoxView>
+        <Label Grid.ColumnSpan="3" 
+               Text="DomiBoy" 
+               HorizontalTextAlignment="Center" 
+               BackgroundColor="Green" 
+               TextColor="White"
+               FontSize="Large">
+        </Label>
+        <BoxView BackgroundColor="Red" Grid.ColumnSpan="3" Grid.Row="1"></BoxView>
+       
     </Grid>
 </ContentPage>
 
