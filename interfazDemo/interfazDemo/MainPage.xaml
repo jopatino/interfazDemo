@@ -4,36 +4,92 @@
              xmlns:local="clr-namespace:interfazDemo"
              x:Class="interfazDemo.MainPage"
              >
-
-    <Grid ColumnSpacing="0"
+    <StackLayout>
+        <Grid ColumnSpacing="0"
           RowSpacing="0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="2*"></RowDefinition>
-            <RowDefinition Height="200"></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"></ColumnDefinition>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="120"></RowDefinition>
+                <RowDefinition Height="120"></RowDefinition>
+                <RowDefinition Height="120"></RowDefinition>
+                <RowDefinition Height="120"></RowDefinition>
+                <RowDefinition Height="120"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
 
-      
-        <Button Text="Botón 5" BackgroundColor="Red" Grid.Row="2"></Button>
-        <Button Text="Botón 6" BackgroundColor="Blue" Grid.Row="2" Grid.Column="1"></Button>
-        <Button Text="Botón 7" BackgroundColor="Chocolate" Grid.Row="3" Grid.ColumnSpan="2"></Button>
-
-        <Label Grid.ColumnSpan="3" 
+            <Label Grid.ColumnSpan="3" 
                Text="DomiBoy" 
                HorizontalTextAlignment="Center" 
                BackgroundColor="Green" 
                TextColor="White"
+               FontSize="Large"
+               VerticalTextAlignment="Center">
+            </Label>
+
+            <Label Grid.ColumnSpan="3" 
+               Grid.Row="1"
+               Text="Lista de Productos"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
                FontSize="Large">
-        </Label>
-        <BoxView BackgroundColor="Red" Grid.ColumnSpan="3" Grid.Row="1"></BoxView>
-       
-    </Grid>
+            </Label>
+
+            <Image Source="chocorramo.jpg" Grid.Row="2"></Image>
+            <Label Grid.Row="2" 
+               Grid.ColumnSpan="2"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               FontSize="Medium"
+               Grid.Column="1"
+               Text="Chocorramo&#10;Precio: $2000.00">
+            </Label>
+
+            <Image Source="pizza.jpg" Grid.Row="3"></Image>
+            <Label Grid.Row="3" 
+               Grid.ColumnSpan="2"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               FontSize="Medium"
+               Grid.Column="1"
+               Text="Pizza&#10;Precio: $40000.0">
+            </Label>
+
+            <Image Source="pollo.jpg" Grid.Row="4"></Image>
+            <Label Grid.Row="4" 
+               Grid.ColumnSpan="2"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               FontSize="Medium"
+               Grid.Column="1"
+               Text="Nombre Pollo&#10;Precio: $30000.00">
+            </Label>
+
+            <Image Source="ramen.jpg" Grid.Row="5"></Image>
+            <Label Grid.Row="5" 
+               Grid.ColumnSpan="2"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               FontSize="Medium"
+               Grid.Column="1"
+               Text="Nombre Ramen&#10;Precio: $20000.00">
+            </Label>
+
+            <Image Source="hamburguesa.jpg" Grid.Row="6"></Image>
+            <Label Grid.Row="6" 
+               Grid.ColumnSpan="2"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               FontSize="Medium"
+               Grid.Column="1"
+               Text="Hamburguesa&#10;Precio: $10000.00">
+            </Label>
+        </Grid>
+    </StackLayout>
 </ContentPage>
 
 
